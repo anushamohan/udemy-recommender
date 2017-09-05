@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+    table {
+    font-family: arial, sans-serif;
+    width: 70%;
+    margin-top : 40px;
+    }
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+    tr:nth-child(even) {
+      background-color: #e8f0f7;
+    }
+  table.dataframe, .dataframe th, .dataframe td {
+    border: 1px solid #dddddd;
+    /*border-bottom: 1px solid #C8C8C8;*/
+    border-collapse: collapse;
+    text-align:left;
+    padding: 8px;
+    margin-bottom: 20px;
+    /*font-size: 0.9em;*/
+    width: auto;
+  }
+    </style>
+  </head>
+  <body style="coral;">
+
+    <br><br>
+    <center>
+      <font color="indigo">
+      <h1 style="font-family:courier;">Your top recommendations in this category</h1>
+      </font>
+      <div>{{tables|safe}}</div>
+    </center>
+      <img src="/static/happy.jpg">
+  </body>
+</html>

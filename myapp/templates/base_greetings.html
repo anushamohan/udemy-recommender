@@ -1,0 +1,24 @@
+{% extends "bs_base.html" %}
+
+{% block content %}
+  <h1 class="heading">Sign In</h1>
+  <div class = "container">
+    <form action="" method="post" name="login" class='form-horizontal'>
+      <div class='form-group'>
+        {{ form.user_name.label(class='form-heading')}}
+        {{ form.user_name(class='form-control') }}
+      </div>
+      <div class='form-group'>
+        {{ form.favorite_color.label(class='form-heading')}}
+        {{ form.favorite_color(class="form-control") }}
+      </div>
+      <div class='form-group'>
+        {{ form.real_person.label(class='form-heading')}}
+        {{ form.real_person(class="form-control") }}
+      </div>
+        <a href='/'><input type="submit" value="Sign In" class="btn btn-primary"></a>
+      {{ form.hidden_tag() }}
+    </form>
+  </div>
+
+{% endblock %}

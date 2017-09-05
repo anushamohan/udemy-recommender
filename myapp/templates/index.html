@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color:powderblue;">
+
+{% block content %}
+  <center>
+    <h1> Udemy Recommender</h1>
+    <img src="/static/udemy-10-sale.jpg">
+    <p style="color:red;"> <i>What do you want to learn today?</i></p>
+    <form action="" method="post" name="get_category">
+        <input type="text" name='category'><br>
+        <input type="submit" value="submit">
+    </form>
+      <p style="color:blue;">please select from the following keywords </p>
+      <p <i> web development, programming, sql, other, art,
+       data science, information technology,
+       software development / mobile application, business, adobe,
+       excel, math, writing, accounting, language </i></p>
+      <li> <a href="popular"> <p>Click here for top 20 courses </p> </a> </li>
+{% endblock %}
+  </center>
+
+
+</body>
+</html>
