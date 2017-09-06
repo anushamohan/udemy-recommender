@@ -14,7 +14,7 @@ I split the dataset into training, validation, and testing sets. To do this I gr
 
 For the regular users, I used matrix factorization model for recommender system. I performed k-fold cross validation to make sure that model does not overfit and also to find the optimal parameters like number of latent factors, regularization constant to be used in the model.
 
-In the final model, I used Latent Dirichlet allocation to extract latent features from text revies and course topics. In order to choose the number of factors to be used by lda, for test review column, most of the reviews talked about course content, video quality/ instructor knowledge. Hence I decided to go with 2 topics for text reviews, whereas for course topics, with 16 latent features, the topics looked more distinguishable and interpretable. After including these side data in the final matrix factorization model, the root mean squared error decreased by 3 percent. 
+In the final model, I used Latent Dirichlet allocation to extract latent features from text reviews and course topics. In order to choose the number of factors to be used by lda, in test review column, most of the reviews were about course content, video quality/ instructor knowledge. Hence I decided to go with 2 topics for text reviews, whereas for course topics, with 16 latent features, the topics looked more distinguishable and interpretable. After including these side data in the final matrix factorization model, the root mean squared error decreased by 3 percent. 
 
 
 
