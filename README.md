@@ -14,8 +14,10 @@ I enroll in a course on udemy by checking out it's ratings and number of enrollm
 
 ### Dataset
 The dataset was obtained from Udemy API. Total of 330,000 ratings with text reviews were collected. The number of unique users in the dataset was 200,000 and number of unique courses was 976. 
-![alt texthttps://user-images.githubusercontent.com/12536060/30229388-90cf92b2-9496-11e7-889f-432134ae2c3f.png)
-As seen from the above picture, the histogram is right skewed. Around >75% of users have taken or rated the course lesser than or equal to 2. The evaluation of ratings from these users was imposiible, hence these luke warm users were treated as cold start users and recommendation for these users was based on popularity model. 
+
+![alt text](https://user-images.githubusercontent.com/12536060/30229388-90cf92b2-9496-11e7-889f-432134ae2c3f.png)
+
+As seen from the above picture, the histogram is right skewed. More than 75% of users have taken or rated the course lesser than or equal to 2. The evaluation of ratings from these users was imposiible, hence these luke warm users were treated as cold start users and recommendation for these users was based on popularity model. 
 The rating scale in the dateset is 0.5 - 5 as around 1000 users have given 0.5 rating to some courses. The utility matrix is very sparse with 975 courses and 12475 regular users and density of the matrix is around 0.4%
 
 Another important thing I did in this project was splitting the dataset manually into training, validation, and testing sets. To do this I grouped the data by user id. The reason for doing this is that in each of the sets created, I wanted each user to be represented. Otherwise, it will be impossible to validate the predictions for that user
