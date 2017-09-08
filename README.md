@@ -10,7 +10,7 @@ I enroll in a course on udemy by checking out it's ratings and number of enrollm
 
 ### Work-flow
 
-![alt text](https://user-images.githubusercontent.com/12536060/30228671-8ea455ca-9493-11e7-8921-022028d4febe.png)
+![alt text](https://user-images.githubusercontent.com/12536060/30229086-564c488e-9495-11e7-84d3-a6e495254834.png)
 
 ### Data
 The dataset was obtained from Udemy API. Total of 330,000 ratings with text reviews were collected. The number of unique users in the dataset was 200,000 and number of unique courses was 976. Around >75% of users have taken or rated the course lesser than or equal to 2. The evaluation of ratings from these users was imposiible, hence these luke warm users were treated as cold start users and recommendation for these users was based on popularity model. The rating scale in the dateset is 0.5 - 5 as around 1000 users have given 0.5 rating to some courses.
