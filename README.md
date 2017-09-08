@@ -27,11 +27,15 @@ For the popularity model, the courses with higher review counts and ratings were
 ##### 2) Matrix Factorization model
 Another important thing I did in this project was splitting the dataset manually into training, validation, and testing sets. To do this, the data was grouped by user id. The reason for doing this is that in each of the sets created, each user needs to be represented. Otherwise, it will be impossible to validate the predictions for that user
 
-For the regular user, the recommender system was built using matrix factorization model which gave better cross validated RMSE than the other models that were used in this project. The basemodel was predicting the test set using train set mean. The second basemodel was predicting the test set with train set mean after accounting for user bias and item bias. The item item collaborative filtering model was also tried, but did not give better RMSE than the base model as the utility matrix was very sparse
+![alt text](https://user-images.githubusercontent.com/12536060/30230726-57443a74-949c-11e7-9b7a-717323d2f6fb.png)
+
+For the regular user, the recommender system was built using matrix factorization model which gave better cross validated RMSE than the other models that were used in this project. The basemodel was predicting the test set using train set mean. The second basemodel was predicting the test set with train set mean after accounting for user bias and item bias. The item item collaborative filtering model was also tried, but did not give better RMSE than the base model as the utility matrix was very sparse.
 
 For the matrix factorization model, two-fold cross validation was performed to make sure that model did not overfit and also to find the optimal parameters like number of latent factors, regularization constant to be used in the model.
 
-In the final model, I used Latent Dirichlet allocation to extract latent features from text reviews and course topics. In order to choose the number of factors to be used by lda, in test review column, most of the reviews were about course content, video quality/ instructor knowledge. Hence I decided to go with 2 topics for text reviews, whereas for course topics, with 16 latent features, the topics looked more distinguishable and interpretable. After including these side data in the final matrix factorization model, the root mean squared error decreased by 3 percent. 
+##### 2) Matrix Factorization model with LDA
+Latent Dirichlet Allocation (LDA) is a topic modelling algorithm that identifies the hidden sematic structues in a 
+In the final model. I used Latent Dirichlet allocation to extract latent features from text reviews and course topics. In order to choose the number of factors to be used by lda, in test review column, most of the reviews were about course content, video quality/ instructor knowledge. Hence I decided to go with 2 topics for text reviews, whereas for course topics, with 16 latent features, the topics looked more distinguishable and interpretable. After including these side data in the final matrix factorization model, the root mean squared error decreased by 3 percent. 
 
 
 
