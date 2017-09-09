@@ -33,7 +33,7 @@ For the regular user, the recommender system was built using matrix factorizatio
 
 For the matrix factorization model, two-fold cross validation was performed to make sure that model did not overfit and also to find the optimal parameters like number of latent factors, regularization constant to be used in the model.
 
-##### 2) Matrix Factorization model with LDA
+##### 3) Matrix Factorization model with LDA
 Latent Dirichlet Allocation (LDA) is a topic modelling algorithm that identifies the hidden sematic structues in a document.
 According to LDA, documents are probability distributions over ltent topics and topics are probability distribution over words.  In the final model, I used LDA to extract latent features from text reviews and course topics. One challenge I had was choosing the number of latent features in text reviews and course topics. Whenever a user gives a review on a course, it was about video quality or intructor's knowlwdge on the course and course content. Hence I followed my intuition to go with 2 latent features. For the course topic, the number of latent features tried was from 4 to 20. But with 16, the latent features were more distinguishable and interpretable. After including these side data in the final matrix factorization model, the root mean squared error decreased by 3 percent. For the future work, I want to include user bias and item bias in the matrix factorization model and see whether the model performance improves. 
 
