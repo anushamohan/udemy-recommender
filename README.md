@@ -37,6 +37,6 @@ For the matrix factorization model, two-fold cross validation was performed to m
 Latent Dirichlet Allocation (LDA) is a topic modelling algorithm that identifies the hidden sematic structues in a document.
 According to LDA, documents are probability distributions over ltent topics and topics are probability distribution over words.  In the final model, I used LDA to extract latent features from text reviews and course topics. One challenge I had was choosing the number of latent features in text reviews and course topics. Whenever a user gives a review on a course, it was about video quality or intructor's knowlwdge on the course and course content. Hence I followed my intuition to go with 2 latent features. For the course topic, the number of latent features tried was from 4 to 20. But with 16, the latent features were more distinguishable and interpretable. After including these side data in the final matrix factorization model, the root mean squared error decreased by 3 percent. For the future work, I want to include user bias and item bias in the matrix factorization model and see whether the model performance improves. 
 
-
+The web application that was developed for this project can be found at https://udemyrecommender.herokuapp.com
 
 
