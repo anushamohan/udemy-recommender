@@ -6,7 +6,7 @@ Udemy is an online learning platform that gives the opportunity for the subject 
 This project aims to explore different methods to build custom course recommendation system for udemy based on star rating and textual review combination based on similarity among different users and courses. 
 
 ### Motivation
-I enroll in a course on udemy by checking out it's ratings and number of enrollments, and by watching some of it's preview and intro videos to get a feel for the course content. I basically spent lot of time before I decide to register in a course. Hence I decided to develop a personalized recommendation system and web app for udemy users.
+I enroll in a course on udemy by checking out its ratings and number of enrollments, and by watching some of it's preview and intro videos to get a feel for the course content. I basically spent lot of time before I decide to register in a course. Hence I decided to develop a personalized recommendation system and web app for udemy users.
 
 ### Work-flow
 
