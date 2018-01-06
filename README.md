@@ -6,19 +6,18 @@ Udemy is an online learning platform that gives the opportunity for the subject 
 This project aims to explore different methods to build custom course recommendation system for udemy based on star rating and textual review combination based on similarity among different users and courses. 
 
 ### Motivation
-I enroll in a course on udemy by checking out its ratings and number of enrollments, and by watching some of it's preview and intro videos to get a feel for the course content. I basically spent lot of time before I decide to register in a course. Hence I decided to develop a personalized recommendation system and web app for udemy users.
+I enroll in a course on udemy by checking out its ratings and number of enrollments, and by watching some of it's preview and intro videos to get a feel for the course content. I basically spend a lot of time before I decide to register in a course. Hence I decided to develop a personalized recommendation system and web app for udemy users.
 
 ### Work-flow
 
 ![alt text](https://user-images.githubusercontent.com/12536060/30229086-564c488e-9495-11e7-84d3-a6e495254834.png)
 
 ### Dataset
-The dataset was obtained from Udemy API. Total of 330,000 ratings with text reviews were collected. The number of unique users in the dataset was 200,000 and number of unique courses was 976. 
+The dataset was obtained from Udemy API. A total of 330,000 ratings with text reviews were collected. The number of unique users in the dataset was 200,000 and number of unique courses was 976. 
 
 ![alt text](https://user-images.githubusercontent.com/12536060/30229388-90cf92b2-9496-11e7-889f-432134ae2c3f.png)
 
-As seen from the above picture, the histogram is right skewed. More than 75% of users have taken or rated the course lesser than or equal to 2. The evaluation of ratings from these users was imposiible, hence these luke warm users were treated as cold start users and recommendation for these users was based on popularity model. 
-The rating scale in the dateset is 0.5 - 5 as around 1000 users have given 0.5 rating to some courses. The utility matrix is very sparse with 975 courses and 12475 regular users and density of the matrix is around 0.4%
+As seen from the above picture, the histogram is right skewed. More than 75% of users have taken or rated lesser than or equal to 2 courses. The evaluation of ratings from these users was impossible, hence these lukewarm users were treated as cold start users and recommendation for these users was based on popularity model. The rating scale in the dataset ranges from 0.5 - 5 as around 1000 users have given 0.5 rating to some courses. The utility matrix is very sparse with 975 courses and 12475 regular users and density of the matrix is around 0.4%
 
 ### Building Recommenders
 ##### 1) Popularity model
